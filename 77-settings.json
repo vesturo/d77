@@ -1,0 +1,18 @@
+{
+  "IsEventRunning":true,
+  "IsMetroOpen":false,
+  "IsStorageOpen":true,
+  "IsOverWorldOpen":false,
+  
+  "StreamBot":"NAN",
+  "MultiInstanceBot":"NAN",
+  
+  "SM1Active":false,
+  "SM1Name":"NAN",
+  
+  "SM2Active":false,
+  "SM2Name":"NAN",
+  
+  "SM3Active":false,
+  "SM3Name":"NAN"
+}
