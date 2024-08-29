@@ -12,7 +12,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # Fetches the entire history to ensure we can use it
+          fetch-depth: 0
 
       - name: Set up Git
         run: |
@@ -29,6 +29,4 @@ jobs:
         run: |
           git add --all
           git commit -m "Deploy to GitHub Pages" || echo "No changes to commit"
-          git push origin main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          git push https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }} main
